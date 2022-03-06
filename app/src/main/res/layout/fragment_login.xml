@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/back"
+    tools:context=".fragments.LoginFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_item"/>
+
+    <EditText
+        android:id="@+id/login_et"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/fileds"
+        android:layout_marginTop="248dp"
+        android:hint="Введите логин"
+        android:drawableStart="@drawable/ic_person"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/fileds"
+        android:layout_marginTop="36dp"
+        android:hint="Введите пароль"
+        android:drawableStart="@drawable/ic_lock"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_et" />
+
+    <Button
+        android:id="@+id/save_user_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/button_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.exam.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.exam.fragments.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/addServicesFragment"
+        android:name="com.example.exam.fragments.AddServicesFragment"
+        android:label="fragment_add_services"
+        tools:layout="@layout/fragment_add_services" >
+        <action
+            android:id="@+id/action_addServicesFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.exam.fragments.AddCategoryFragment"
+        android:label="fragment_add_category"
+        tools:layout="@layout/fragment_add_category" >
+        <action
+            android:id="@+id/action_addCategoryFragment_to_addServicesFragment"
+            app:destination="@id/addServicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.exam.fragments.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" >
+        <argument android:name="categoryId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_servicesFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.example.exam.fragments.PaymentsFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_payments" >
+        <argument android:name="serviceId"
+            app:argType="integer" />
+        <argument
+            android:name="servicesName"
+            app:argType="string" />
+        <argument android:name="servicesCategory"
+            app:argType="integer" />
+    </fragment>
+</navigation>

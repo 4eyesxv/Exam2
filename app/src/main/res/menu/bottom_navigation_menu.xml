@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Экран Оплаты"
+        android:icon="@drawable/ic_payments"
+        />
+
+    <item
+        android:id="@+id/listFragment"
+        android:title="История платажей"
+        android:icon="@drawable/ic_list"
+        />
+    <item
+        android:id="@+id/addServicesFragment"
+        android:title="Окно добавления"
+        android:icon="@drawable/ic_add"
+        />
+</menu>

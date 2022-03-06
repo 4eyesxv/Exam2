@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#00071B</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SecondText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#00071B</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+</resources>
